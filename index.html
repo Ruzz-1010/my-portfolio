@@ -27,7 +27,7 @@
       <a href="#" class="logo">RUZZEL<span>Dev.</span></a>
 
       <!-- Hamburger Menu Icon -->
-      <i id="menu-icon" class="bx bx-menu"></i>
+      <div id="menu-icon" class="bx bx-menu"></div>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
 
 
@@ -97,7 +97,7 @@
             Build and optimize modern, responsive websites and web applications. 
     Specializing in front-end and back-end development using HTML, CSS, and JavaScript.
           </p>
-          <a href="#" class="btn">Read More</a>
+          <a href="#home" class="btn">Download cv</a>
         </div>
 
         <div class="services-box">
@@ -108,7 +108,7 @@
             and illustrations, we bring creativity to life with professional tools like 
             Photoshop and Illustrator.
           </p>
-          <a href="#" class="btn">Read More</a>
+          <a href="#home" class="btn">Download cv</a>
         </div>
 
         <div class="services-box">
@@ -120,7 +120,7 @@
             Godot, Unity, and Unreal Engine.
           </p>
 
-          <a href="#" class="btn">Read More</a>
+          <a href="#home" class="btn">Download cv</a>
         </div>
       </div>
     </section>
@@ -141,21 +141,20 @@
     =========================================== -->
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me</span></h2>
-
-      <form action="#">
+      <form action="https://formspree.io/f/xkgodqlq" method="POST">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email Address" required />
         </div>
-
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email Subject" />
+          <input type="tel" name="phone" placeholder="Mobile Number" required />
+          <input type="text" name="subject" placeholder="Email Subject" required />
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
         <input type="submit" value="Send Message" class="btn" />
       </form>
     </section>
+
 
     <!-- ==========================================
                     Footer
